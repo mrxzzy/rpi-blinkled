@@ -1,0 +1,10 @@
+[Unit]
+Description=Make a blink when done booting.
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/blinkled.py
+
+[Install]
+WantedBy=blinkled.target
